@@ -10,7 +10,7 @@ from fastai.vision import *
 
 model_file_url = "https://www.dropbox.com/s/bxpfva6499van7n/resnet34_mtag100.pth?raw=1"
 model_file_name = "model"
-classes = ["blues", "classical"]
+classes = ["classical", "blues"]
 path = Path(__file__).parent
 
 app = Starlette()
