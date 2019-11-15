@@ -8,9 +8,9 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-model_file_url = "https://drive.google.com/open?id=1-4jrvFL0K08ni_-WP07kHPPwL9M04_2X"
+model_file_url = "https://www.dropbox.com/s/bxpfva6499van7n/resnet34_mtag100.pth?raw=1"
 model_file_name = "model"
-classes = ["classical", "blues"]
+classes = ["blues", "classical"]
 path = Path(__file__).parent
 
 app = Starlette()
