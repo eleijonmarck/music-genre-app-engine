@@ -59,6 +59,8 @@ async def analyze(request):
     data = await request.form()
     img_bytes = await (data["file"].read())
     img = open_image(BytesIO(img_bytes))
+
+    # we could  async wrap the learn.predict to make it not block other requests
     return JSONResponse({"result": str(learn.predict(img)[0])})
 
 
