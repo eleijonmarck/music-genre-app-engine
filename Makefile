@@ -7,4 +7,4 @@ SHELL := /bin/bash
 run:
 	python app/server.py serve
 deploy:
-	gcloud deploy app
+	gcloud app deploy
